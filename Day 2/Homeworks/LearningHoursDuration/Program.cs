@@ -28,7 +28,6 @@ BEGIN:
                 goto END;
             }
 
-
             //* Convert to integer
             int[] separatedIntegers = Array.ConvertAll(separatedString, int.Parse);
 
@@ -43,15 +42,8 @@ BEGIN:
             int startTime = (separatedIntegers[0] * 60) + separatedIntegers[1];
             int endTime = (separatedIntegers[2] * 60) + separatedIntegers[3];
 
-            //* Check if the starting hour is bigger than the end hour
-            if (startTime > endTime)
-            {
-                Console.WriteLine("Starting time cannot be bigger than the end time");
-                goto END;
-            }
-
             //* Get the time difference
-            int durationTime = endTime - startTime;
+            int durationTime = Math.Abs(endTime - startTime);
 
             //* Convert to hours and minutes
             int durationHour = durationTime / 60;
