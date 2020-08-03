@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Elevator
+namespace LearningHoursDuration
 {
     class Program
     {

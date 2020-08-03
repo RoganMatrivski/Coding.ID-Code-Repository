@@ -1,9 +1,9 @@
-// Author: Robin Mauritz Languju
+﻿// Author: Robin Mauritz Languju
 // Written in Visual Studio Code, copy pasted to SharpDevelop.
 
 using System;
 
-namespace Elevator
+namespace LearningHD
 {
     class Program
     {
@@ -27,7 +27,6 @@ BEGIN:
                 Console.WriteLine("Input invalid");
                 goto END;
             }
-
 
             //* Convert to integer
             int[] separatedIntegers = Array.ConvertAll(separatedString, int.Parse);
