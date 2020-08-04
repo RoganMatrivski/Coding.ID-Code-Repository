@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Rogan Matrivski",
+    "classifications": [ "Console" ],
+    "identity": "RoganMatrivski.Temporary.Template.CodingIDTemplate",
+    "name": "Console app with goto looping and copyright notice embedded.",
+    "shortName": "codingid-console"
+}
