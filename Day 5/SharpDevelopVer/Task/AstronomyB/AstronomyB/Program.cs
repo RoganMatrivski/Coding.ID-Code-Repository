@@ -26,7 +26,7 @@ namespace AstronomyB
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert the ISBN code: ");
             string input = Console.ReadLine();
 
@@ -49,7 +49,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

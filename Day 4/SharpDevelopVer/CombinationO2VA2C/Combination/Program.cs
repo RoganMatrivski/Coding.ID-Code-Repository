@@ -27,14 +27,14 @@ namespace Combination
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
 
             Console.Write("Input the text: ");
             string input = Console.ReadLine();
             string lowercasedInput = input.ToLower();
             string sterilizedInput = string.Concat(lowercasedInput.Where(character => character != ' '));
 
-            char[] vowels = {'a', 'i', 'u', 'e', 'o'};
+            char[] vowels = { 'a', 'i', 'u', 'e', 'o' };
 
             char[] separatedVowels = sterilizedInput.Where(character => vowels.Contains(character)).ToArray();
             char[] separatedConsonants = sterilizedInput.Where(character => !vowels.Contains(character)).ToArray();
@@ -44,13 +44,13 @@ BEGIN:
 
             for (int i = 0; i < separatedVowels.Count() - 1; i += 2)
             {
-                char[] chars = {separatedVowels[i], separatedVowels[i + 1]};
+                char[] chars = { separatedVowels[i], separatedVowels[i + 1] };
                 vowelGroups.Add(new string(chars));
             }
 
             for (int i = 0; i < separatedConsonants.Count() - 1; i += 2)
             {
-                char[] chars = {separatedConsonants[i], separatedConsonants[i + 1]};
+                char[] chars = { separatedConsonants[i], separatedConsonants[i + 1] };
                 consonantGroups.Add(new string(chars));
             }
 
@@ -59,7 +59,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

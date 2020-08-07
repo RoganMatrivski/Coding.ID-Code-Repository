@@ -6,7 +6,7 @@ namespace TheF
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert the number to find the factor: ");
             int numberToFind = Convert.ToInt32(Console.ReadLine());
 
@@ -17,10 +17,10 @@ BEGIN:
                     Console.WriteLine("{0} ", i);
                 }
             }
-            
+
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

@@ -26,7 +26,7 @@ namespace Compounding
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert input: ");
             string input = Console.ReadLine().ToLower();
 
@@ -43,7 +43,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

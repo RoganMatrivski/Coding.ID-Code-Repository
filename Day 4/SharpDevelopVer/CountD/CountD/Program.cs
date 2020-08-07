@@ -18,7 +18,7 @@
 //* Repository link: https://github.com/RoganMatrivski/Coding.ID-Code-Repository
 
 using System;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CountD
@@ -27,7 +27,7 @@ namespace CountD
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
 
             Console.WriteLine("Write the L, R and K input: ");
             string input = Console.ReadLine();
@@ -58,10 +58,10 @@ BEGIN:
 
             Console.WriteLine(divisibleNumbers.Sum());
 
-END:
+        END:
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

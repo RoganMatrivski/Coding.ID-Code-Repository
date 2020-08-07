@@ -25,13 +25,13 @@ namespace customTemplate
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
 
             //TODO: Add code function here
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

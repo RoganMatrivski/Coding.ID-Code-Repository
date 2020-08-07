@@ -25,7 +25,7 @@ namespace Factorial
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert number to calculate the factorial: ");
             int number = int.Parse(Console.ReadLine());
 
@@ -39,7 +39,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

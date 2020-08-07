@@ -25,7 +25,7 @@ namespace MarryM
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             double joniPercentage = 0.6;
             double jeniPercentage = 0.4;
             int requiredMoney = 60000000;
@@ -38,11 +38,11 @@ BEGIN:
 
             int mergedMoney = joniMoney + jeniMoney;
             int storedMoney = 0;
-            
+
             for (int i = 0; i < 2; i++)
             {
                 storedMoney += mergedMoney;
-                
+
                 if (i > 0)
                     storedMoney += (int)(storedMoney * growthRate);
             }
@@ -54,7 +54,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

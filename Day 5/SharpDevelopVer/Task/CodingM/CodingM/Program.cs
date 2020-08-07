@@ -25,7 +25,7 @@ namespace CodingM
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Input the directions: ");
             string directions = Console.ReadLine().ToLower();
 
@@ -56,10 +56,10 @@ BEGIN:
 
             Console.WriteLine("{0} {1}", xCoordinate, yCoordinate);
 
-END:
+        END:
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

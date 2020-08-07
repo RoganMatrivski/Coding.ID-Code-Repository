@@ -26,7 +26,7 @@ namespace customTemplate
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert the text: ");
             string input = Console.ReadLine();
             input = input.ToLower().Replace(" ", "");
@@ -48,7 +48,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

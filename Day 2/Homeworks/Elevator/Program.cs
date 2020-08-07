@@ -12,14 +12,14 @@ namespace Elevator
 
         static void Main(string[] args)
         {
-            //* Shouldn't have used labels for code readability but... eh, okay.
-BEGIN:
+        //* Shouldn't have used labels for code readability but... eh, okay.
+        BEGIN:
 
             Console.Write("Enter the floor number: ");
             int floorNumber = Convert.ToUInt16(Console.ReadLine());
 
             //* Check beforehand if user inputs a wrong floor
-            if (floorNumber > TOP_ELEVATOR || floorNumber < GROUND_ELEVATOR) 
+            if (floorNumber > TOP_ELEVATOR || floorNumber < GROUND_ELEVATOR)
             {
                 Console.WriteLine("Wrong floor");
                 goto END;
@@ -40,12 +40,12 @@ BEGIN:
                 Console.WriteLine("A");
             }
 
-END:
+        END:
 
             Console.ReadKey(true);
             Console.Clear();
 
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

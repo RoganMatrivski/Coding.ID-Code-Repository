@@ -26,7 +26,7 @@ namespace ListMSC
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Total kalimat: ");
             int sentenceCount = int.Parse(Console.ReadLine());
 
@@ -64,7 +64,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

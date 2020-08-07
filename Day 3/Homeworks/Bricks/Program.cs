@@ -6,7 +6,7 @@ namespace Bricks
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert the X number: ");
             int X_brick = Convert.ToInt32(Console.ReadLine());
 
@@ -34,7 +34,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

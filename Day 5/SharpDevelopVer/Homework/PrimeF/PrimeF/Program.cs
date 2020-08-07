@@ -26,14 +26,14 @@ namespace PrimeF
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Input the number to find the prime factor: ");
             int number = int.Parse(Console.ReadLine());
 
             List<int> primeFactorNumbers = new List<int>();
             int divider = 2;
-            while (true) 
-            { 
+            while (true)
+            {
                 //* Check if the divider is the same as the number. If it does, it means it reached the biggest prime.
                 if (number == divider)
                 {
@@ -46,20 +46,20 @@ BEGIN:
                 {
                     if (!primeFactorNumbers.Contains(divider))
                         primeFactorNumbers.Add(divider);
-                    
+
                     number /= divider;
                 }
                 else
                 {
                     divider++;
                 }
-            } 
+            }
 
             Console.WriteLine(string.Join(" ", primeFactorNumbers));
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

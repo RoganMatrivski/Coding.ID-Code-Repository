@@ -25,7 +25,7 @@ namespace CreditS
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Business Type: ");
             double businessType = Convert.ToInt32(Console.ReadLine());
             Console.Write("Monthly Income: ");
@@ -33,9 +33,9 @@ BEGIN:
             Console.Write("Domicile: ");
             double domicile = Convert.ToInt32(Console.ReadLine());
 
-            businessType    *= 0.5;
-            monthlyIncome   *= 0.3;
-            domicile        *= 0.2;
+            businessType *= 0.5;
+            monthlyIncome *= 0.3;
+            domicile *= 0.2;
 
             double total_value = businessType + monthlyIncome + domicile;
             char creditScore;
@@ -56,7 +56,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

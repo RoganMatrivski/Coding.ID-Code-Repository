@@ -9,7 +9,7 @@ namespace Kuy_
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert the N number: ");
             int N = Convert.ToInt32(Console.ReadLine());
 
@@ -20,7 +20,7 @@ BEGIN:
 
             for (int i = 1; i <= N; i++)
             {
-                if (i % X == 0) 
+                if (i % X == 0)
                 {
                     result += "Kuy!" + " ";
                 }
@@ -33,7 +33,7 @@ BEGIN:
             Console.WriteLine(result);
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

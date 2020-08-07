@@ -29,7 +29,7 @@ namespace CreateNA
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Input Row: ");
             int rowCount = Convert.ToInt32(Console.ReadLine());
             Console.Write("Input Column: ");
@@ -44,21 +44,21 @@ BEGIN:
             for (int i = 0; i < rowCount; i++)
             {
                 Console.Write("Input Row {0}: ", i + 1);
-                                                                //* This block of code ahead is convoluted, but (a bit) fool proof.
-                int[] rowInputs = Console   .ReadLine()         //* Read the rows number
+                //* This block of code ahead is convoluted, but (a bit) fool proof.
+                int[] rowInputs = Console.ReadLine()         //* Read the rows number
                                             .Split(' ')         //* Split by space
-                                            .Select(c => 
+                                            .Select(c =>
                     {                                           //* For each number string
-                    int parseResult = 0;                        //* Create a container to store the conversion result
-                    if (int.TryParse(c, out parseResult))       //* Try to parse the string
-                        return parseResult;                     //* Return the parse result
-                    else                                        //* If it can't
-                        return -1;                              //* Return error as -1
-                }).ToArray();
-                
+                        int parseResult = 0;                        //* Create a container to store the conversion result
+                        if (int.TryParse(c, out parseResult))       //* Try to parse the string
+                            return parseResult;                     //* Return the parse result
+                        else                                        //* If it can't
+                            return -1;                              //* Return error as -1
+                    }).ToArray();
+
                 if (rowInputs.Contains(-1) || rowInputs.Length != columnCount) //* Check if the row input is incorrect
                 {
-                    Console.WriteLine("Input Error"); 
+                    Console.WriteLine("Input Error");
                     goto END;
                 }
 
@@ -88,15 +88,15 @@ BEGIN:
 
                     break;
                 default:
-                    Console.WriteLine("Wrong Operator"); 
+                    Console.WriteLine("Wrong Operator");
                     goto END;
             }
 
             Console.WriteLine("Result: {0}", string.Join(" ", reducedTable));
-END:
+        END:
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

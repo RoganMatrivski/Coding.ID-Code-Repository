@@ -25,7 +25,8 @@ namespace customTemplate
 {
     class Program
     {
-        static string formatCurrency(int value) {
+        static string formatCurrency(int value)
+        {
             string stringValue = value.ToString();
 
             char[] invertedValue = stringValue.Reverse().ToArray();
@@ -46,7 +47,7 @@ namespace customTemplate
 
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("In: ");
             int[] startTimeInput = Console.ReadLine().Split(':').Select(int.Parse).ToArray();
             Console.Write("Out: ");
@@ -75,7 +76,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

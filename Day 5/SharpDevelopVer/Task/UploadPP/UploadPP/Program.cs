@@ -26,7 +26,7 @@ namespace UploadPP
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert minimum dimensions: ");
             int minDimension = int.Parse(Console.ReadLine());
             Console.Write("Insert number of photos: ");
@@ -58,10 +58,10 @@ BEGIN:
                 Console.WriteLine("ACCEPTED");
             }
 
-END:
+        END:
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

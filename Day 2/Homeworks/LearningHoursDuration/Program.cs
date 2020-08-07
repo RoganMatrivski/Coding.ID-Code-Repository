@@ -12,8 +12,8 @@ namespace LearningHoursDuration
 
         static void Main(string[] args)
         {
-            //* Shouldn't have used labels for code readability but... eh, okay.
-BEGIN:
+        //* Shouldn't have used labels for code readability but... eh, okay.
+        BEGIN:
 
             Console.Write("Enter the starting time and the end time: ");
             string floorNumber = Console.ReadLine();
@@ -54,12 +54,12 @@ BEGIN:
             //* This century-old compiler doesn't support string literal so i'm forced with a good ol' string concat
             Console.WriteLine("Time difference: " + durationHour.ToString().PadLeft(2, '0') + ":" + durationMinutes.ToString().PadLeft(2, '0'));
 
-END:
+        END:
 
             Console.ReadKey(true);
             Console.Clear();
 
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

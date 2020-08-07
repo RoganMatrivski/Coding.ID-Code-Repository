@@ -6,7 +6,7 @@ namespace Star
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Pick the mode (A, B, C, D): ");
             string mode = Console.ReadLine();
 
@@ -71,7 +71,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

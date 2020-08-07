@@ -25,14 +25,14 @@ namespace customTemplate
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Enter the departure time: ");
             int[] departureTimeInput = Array.ConvertAll(Console.ReadLine().Split(':'), int.Parse);
             Console.Write("Enter the travel duration: ");
             int[] travelDurationInput = Array.ConvertAll(Console.ReadLine().Split(':'), int.Parse);
 
             if (
-                departureTimeInput.Length != 2 || 
+                departureTimeInput.Length != 2 ||
                 travelDurationInput.Length != 2 ||
                 departureTimeInput[0] > 24 ||
                 departureTimeInput[1] > 60 ||
@@ -54,10 +54,10 @@ BEGIN:
 
             Console.WriteLine("Arrive time: {0}:{1}", endHour.ToString().PadLeft(2, '0'), endMinute.ToString().PadLeft(2, '0'));
 
-END:
+        END:
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

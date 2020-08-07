@@ -26,7 +26,7 @@ namespace MagicSC
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert the text: ");
             string input = Console.ReadLine().Replace(" ", "");
 
@@ -53,7 +53,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

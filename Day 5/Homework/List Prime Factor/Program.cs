@@ -26,7 +26,7 @@ namespace ListPF
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.Write("Insert number count: ");
             int numberCount = int.Parse(Console.ReadLine());
 
@@ -38,8 +38,8 @@ BEGIN:
 
                 List<int> primeFactorNumbers = new List<int>();
                 int divider = 2;
-                while (true) 
-                { 
+                while (true)
+                {
                     //* Check if the divider is the same as the number. If it does, it means it reached the biggest prime.
                     if (number == divider)
                     {
@@ -52,14 +52,14 @@ BEGIN:
                     {
                         if (!primeFactorNumbers.Contains(divider))
                             primeFactorNumbers.Add(divider);
-                        
+
                         number /= divider;
                     }
                     else
                     {
                         divider++;
                     }
-                } 
+                }
 
                 results.Add(primeFactorNumbers);
             }
@@ -71,7 +71,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }

@@ -13,16 +13,16 @@ namespace ConvertFlowchart1
 
         static void Main(string[] args)
         {
-            //* This one is based on elimination-like algorithm. 
+        //* This one is based on elimination-like algorithm. 
 
-            //* Shouldn't have used labels for code readability but... eh, okay.
-            START:
+        //* Shouldn't have used labels for code readability but... eh, okay.
+        START:
             Console.Write("Write Math Score: ");
             int mathScore = Convert.ToUInt16(Console.ReadLine());
 
             Console.Write("Write English Score: ");
             int englishScore = Convert.ToUInt16(Console.ReadLine());
-            
+
             Console.Write("Write Algorithm Score: ");
             int algorithmScore = Convert.ToUInt16(Console.ReadLine());
 
@@ -31,9 +31,9 @@ namespace ConvertFlowchart1
             if (algorithmScore < 60)
             {
                 Console.WriteLine(FAILED_MESSAGE);
-                goto START; 
+                goto START;
             }
-            
+
             //* Calculate avgScore if they passed the Algorithm Score
             int avgScore = (mathScore + englishScore + algorithmScore) / 3;
 

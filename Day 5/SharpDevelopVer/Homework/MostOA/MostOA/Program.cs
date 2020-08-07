@@ -26,7 +26,7 @@ namespace MostOA
     {
         static void Main(string[] args)
         {
-BEGIN:
+        BEGIN:
             Console.WriteLine("Insert the numbers: ");
             string[] numbers = Console.ReadLine().Split(' ');
 
@@ -57,7 +57,7 @@ BEGIN:
                     mostCountNumber = new KeyValuePair<string, int>("", -1);
             }
 
-            if (mostCountNumber.Value != -1) 
+            if (mostCountNumber.Value != -1)
             {
                 Console.WriteLine("Found {0} occurs {1} times.", mostCountNumber.Key, mostCountNumber.Value);
             }
@@ -68,7 +68,7 @@ BEGIN:
 
             Console.ReadKey(true);
             Console.Clear();
-goto BEGIN;
+            goto BEGIN;
         }
     }
 }
