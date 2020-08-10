@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicP", "MagicP\MagicP.csproj", "{407207F2-A622-4CF7-97F2-4BD7C04B530A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{407207F2-A622-4CF7-97F2-4BD7C04B530A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407207F2-A622-4CF7-97F2-4BD7C04B530A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407207F2-A622-4CF7-97F2-4BD7C04B530A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407207F2-A622-4CF7-97F2-4BD7C04B530A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
